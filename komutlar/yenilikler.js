@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setTimestamp()
   .setAuthor(message.author.username, message.author.avatarURL)
-  .setDescription("**\nk!kaçcm \nGeldi**");
+  .setDescription("**\nBota Vds Geldi**");
   message.channel.sendEmbed(yenilikler)
 };
 
