@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setTimestamp()
   .setAuthor(message.author.username, message.author.avatarURL)
-  .setDescription("**\nk!sunucu-resim-değiş**");
+  .setDescription("**\nk!sunucu-resim-değiş Geldi**");
   message.channel.sendEmbed(yenilikler)
 };
 
