@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const Jimp = require('jimp'); 
 
 exports.run = (client, message, args) => {
-    if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setTitle('Sunucu resmi değiştir;').setDescription(message.author.tag + ', bu komutu kullanmak için gerekli izinlere sahip değilsin.').setFooter('TheRenk', client.user.avatarURL).setTimestamp());
+    if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setTitle('Sunucu resmi değiştir;').setDescription(message.author.tag + ', bu komutu kullanmak için gerekli izinlere sahip değilsin.').setFooter('Kepçük Baba', client.user.avatarURL).setTimestamp());
     if (!message.guild) {
-    return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setTitle('Sunucu resmi değiştir;').setDescription(message.author.tag + ', bu komutu direkt mesajda kullanamazsın.').setFooter('TheRenk', client.user.avatarURL).setTimestamp()); }
+    return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setTitle('Sunucu resmi değiştir;').setDescription(message.author.tag + ', bu komutu direkt mesajda kullanamazsın.').setFooter('Kepçük Baba', client.user.avatarURL).setTimestamp()); }
     const sayMessage = args.join(' ');
-    if (sayMessage.length < 1) return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setTitle('Sunucu resmi değiştir;').setDescription(message.author.tag + ', kullanım: tr!sunucu-resmi-değiştir <bağlantı>.').setFooter('TheRenk', client.user.avatarURL).setTimestamp());
+    if (sayMessage.length < 1) return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setTitle('Sunucu resmi değiştir;').setDescription(message.author.tag + ', kullanım: k!sunucu-resmi-değiştir <bağlantı>.').setFooter('Kepçük Baba', client.user.avatarURL).setTimestamp());
     message.guild.setIcon(sayMessage);
     const embed = new Discord.RichEmbed()
     .setColor('RANDOM')
