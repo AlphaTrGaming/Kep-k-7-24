@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
     .setColor('RANDOM')
     .setTitle('Sunucu resmi değiştir;')
     .setDescription(message.author.tag + ', sunucu resmi başarıyla değiştirildi.')
-    .setFooter('TheRenk', client.user.avatarURL)
+    .setFooter('Kepçük Baba', client.user.avatarURL)
     .setTimestamp()
     message.channel.send(embed);
   };
