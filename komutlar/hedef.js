@@ -8,7 +8,7 @@ exports.run = (client, message) => {
                    icon_url: ""
                  },
                color: 0xD97634,
-               description: `Hedef komut sayısı = **100** \nŞimdiki komut sayısı = 48 \nHedef Sunucu Sayısı = **10** \nŞimdiki sunucu sayısı = ${client.guilds.size}`
+               description: `Hedef komut sayısı = **100** \nŞimdiki komut sayısı = 51 \nHedef Sunucu Sayısı = **20** \nŞimdiki sunucu sayısı = ${client.guilds.size}`
              }});
 };
 
